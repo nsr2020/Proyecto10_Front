@@ -1,0 +1,33 @@
+.sectionRegister{
+    width: 100%;
+    min-height: 85svh;
+    background-color: var(--nsr-color1);
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    
+}
+.formRegister{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+#username, #password {
+    padding: var(--nsr-padd1);
+    border-radius: var(--nsr-bradiusS);
+    border: none;
+    background-color:var(--nsr-color8);
+}
+#registerbtn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:var(--nsr-color9);
+    cursor: pointer;
+    font-weight: bolder;
+}
+#registerbtn:hover{
+    background-color: brown;
+}

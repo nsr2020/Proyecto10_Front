@@ -1,0 +1,50 @@
+.sectionLogin{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nsr-color1);
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    
+    
+
+}
+.sectionLogin>.login{
+    width: 250px;
+    height: 250px;
+/*     background-color: #ebe35b;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.login>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--nsr-gap5);
+}
+.inputUN, .inputPass{
+    border: none;
+    background-color: var(--nsr-color5);
+    padding: var(--nsr-padd1);
+    border-radius: var(--nsr-bradiusS);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.btnLogin{
+    padding: var(--nsr-padd1);
+    background-color: var(--nsr-color6);
+    font-weight: bolder;
+    border-radius: var(--nsr-bradiusS);
+    border: none;
+    cursor: pointer;
+}
+.btnLogin:hover{
+    background-color: var(--nsr-color7);
+}

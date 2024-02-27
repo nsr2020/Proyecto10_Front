@@ -1,0 +1,79 @@
+.sectionFiltro{
+    width: 100%;
+    height: 10svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    background-color: #db9200;
+    padding: var(--nsr-padd4);
+    
+}
+.sectionFiltro>select{
+    width: 170px;
+    padding: var(--nsr-padd1);
+    border-radius: var(--nsr-bradiusM);
+    background-color: var(--nsr-color2);
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sectionFiltro>select>option{
+font-weight: bolder;
+font-size: 12px;
+font-family: 'Courier New', Courier, monospace;
+}
+  
+.divPrice{
+   display: flex;
+   gap: 20px;
+}
+.divPrice>input, .divPrice>button{
+    padding: var(--nsr-padd1);
+    border-radius: var(--nsr-bradiusM);
+    border: none;
+    background-color: var(--nsr-color3);
+}
+.divPrice>button{
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btnLimpiar{
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.btnLimpiar:hover{
+    transform: scale(1.1);
+}
+    
+
+@media (max-width: 600px) {
+    .sectionFiltro>select{
+        width: 70px; 
+    }
+    .divPrice{
+        gap: 10px;
+     }
+     .inputPrice{
+        width: 70px;
+     }
+     .sectionFiltro{
+        gap: 10px;
+        justify-content: center; 
+     }
+}
+
+@media ( max-width:330px){
+    .sectionFiltro>select{
+        width: 40px; 
+    }
+    .inputPrice{
+        width: 70px;
+     }
+     .divPrice>button{
+    width: 50px;
+    text-align: center;
+    }
+}

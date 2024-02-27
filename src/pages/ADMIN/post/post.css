@@ -1,0 +1,49 @@
+.sectionPost{
+  width: 100%;
+  height: 85svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db9200;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  
+}
+.formPost{
+    width: 100%;
+    height: 85svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--nsr-gap2);
+}
+.formPost>input{
+ width: 250px;
+ padding: var(--nsr-padd1);
+ border-radius: var(--nsr-bradiusM);
+ border: none;
+ background-color: var(--nsr-color3);
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 15px;
+ font-weight: bold;
+}
+#selectPost{
+    width: 250px;
+    padding: var(--nsr-padd1);
+    border-radius: var(--nsr-bradiusM);
+    border: none;
+    background-color: var(--nsr-color5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+#btnPost{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: var(--nsr-bradiusM);
+    border: none;
+    padding: var(--nsr-padd1);
+    background-color: var(--nsr-color6);
+    cursor: pointer;
+}

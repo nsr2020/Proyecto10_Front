@@ -1,0 +1,33 @@
+#app{
+   
+    width: 100%;
+    height: 100svh;
+    background: url("https://i.pinimg.com/236x/73/60/5f/73605fab5ba3fe0ad158e7d6ed88f419.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+   
+}
+#app p {
+    color: rgb(17, 20, 10);
+    font-weight: bold;
+    font-size: 25px;
+    transition: all 1s;
+}
+#app p:hover{
+    color: var(--nsr-color10);
+}
+#app img{
+    width: 100px;
+    height: 100px;
+    transition: all 1s;
+    cursor: pointer;
+}
+#app img:hover{
+    transform: scale(0.8) rotate(45deg);
+}

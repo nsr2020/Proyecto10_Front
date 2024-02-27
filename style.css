@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Revolution", sans-serif;
+}
+/*Variables*/
+:root {
+  --nsr-color1: #db9200;
+  --nsr-color2: #d87093;
+  --nsr-color3: #ebe35b;
+  --nsr-color4: #47d600;
+  --nsr-color5: aquamarine;
+  --nsr-color6: blueviolet;
+  --nsr-color7:red;
+  --nsr-color8: rgb(190, 151, 226);
+  --nsr-color9:rgb(58, 69, 216);
+    --nsr-color10:rgb(235, 101, 101);
+  /*Paddings y Margins*/
+  --nsr-padd1: 10px;
+  --nsr-padd2: 20px;
+  --nsr-padd3: 30px;
+  --nsr-padd4: 50px;
+
+  --nsr-bor1: 10px;
+  --nsr-bor2: 20px;
+  --nsr-bor3: 30px;
+
+  /*font size*/
+  --nsr-gap1: 10px;
+  --nsr-gap2: 20px;
+  --nsr-gap3: 25px;
+  --nsr-gap4:50px;
+  --nsr-gap5:30px;
+  --nsr-gap6:150px;
+
+  /*borders*/
+  --nsr-border1: 5px, solid black;
+  /*Border radius*/
+  --nsr-bradiusS: 5px;
+  --nsr-bradiusM:10px;
+  --nsr-bradiusM:20px;
+}
+
+body{
+width: 100%;
+  position: relative;
+  background-color: rgb(235, 143, 101);
+  background-image: url(./public/load1.gif);
+  background-size: contain;
+
+} 
+
+
+
+
