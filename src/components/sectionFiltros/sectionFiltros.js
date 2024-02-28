@@ -11,16 +11,14 @@ sectionFiltro.classList.add("sectionFiltro")
 const selectType = document.createElement("select")
 selectType.classList.add("selecType")
 
-const opcionesTipos = ["All", "Pop", "Metal", "HipHop", "Dance", "Bandas Sonoras"];
+
+const opcionesTipos = ["Todas", "Pop", "Metal", "HipHop", "Dance", "Bandas Sonoras"];
 
 opcionesTipos.forEach((tipo) => {
     const opcion = document.createElement("option");
-    opcion.text = tipo;
-    opcion.value =tipo;
-    selectType.appendChild(opcion);
-    if (tipo === "All") {
-        selectType.value = tipo;
-    }
+    opcion.textContent = tipo;
+    selectType.append(opcion);
+    
 });
 
 
@@ -51,11 +49,12 @@ selectType.addEventListener("change",(e) =>{
 
     if(optionvalue!="Todas" && pricevalue > 0){
         createMainSelectAndPrice(optionvalue,pricevalue)
-    }else{
+    }else {
         createMainSelect(optionvalue)
     }
     
 })
+
 inputPrice.addEventListener("input", () =>{
     const inputvalue = document.querySelector(".inputPrice").value
     const btnPrice = document.querySelector(".btnPrice")
@@ -73,8 +72,7 @@ btnPrice.addEventListener("click", () =>{
 
     if(pricevalue <= 0 || pricevalue === ""){
         alert("Por favor introduce un numero mayor a 0!!")
-        createMain()
-        
+        createMain()   
     }
 
     if (optionvalue!="Todas" && pricevalue > 0) {
@@ -111,4 +109,24 @@ export const encenderSectionFiltros = () =>{
     const sectionFiltro = document.querySelector(".sectionFiltro")
     sectionFiltro.style.display = "flex"
     limpiarFiltros()
+}
+export const desconectarSectionFiltros =  () =>{
+const inputPrice = document.querySelector(".inputPrice")
+inputPrice.disabled = true;
+const selectType = document.querySelector(".selecType")
+selectType.disabled = true;
+const btnLimpiar = document.querySelector(".btnLimpiar")
+ btnLimpiar.disabled = true;   
+ btnLimpiar.style.pointerEvents = "none"
+}
+
+export const conectarSectionFiltros = () =>{
+const inputPrice = document.querySelector(".inputPrice")
+inputPrice.disabled = false;
+const selectType = document.querySelector(".selecType")
+selectType.disabled = false;
+const btnLimpiar = document.querySelector(".btnLimpiar")
+ btnLimpiar.disabled = false; 
+ btnLimpiar.style.pointerEvents = "auto"  
+
 }

@@ -1,4 +1,5 @@
-import { apagarSectionFiltros } from "../../components/sectionFiltros/sectionFiltros";
+import { createMain } from "../../components/main/main";
+import { apagarSectionFiltros, encenderSectionFiltros, limpiarFiltros } from "../../components/sectionFiltros/sectionFiltros";
 import { createDeleteMusica } from "../../pages/ADMIN/delete/delete";
 import { createUpdateMusica } from "../../pages/ADMIN/update/update";
 import { addFavorito } from "../addFavorito";
@@ -6,7 +7,14 @@ import { removeFavorito } from "../removeFavorito";
 
 
 export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
-   
+
+  /*   if(!musicas.length){
+        alert("No hay canciones bajo los criterios buscados")
+        encenderSectionFiltros()
+        limpiarFiltros()
+        createMain()
+    }
+    */
     const divArticlesMusica = document.createElement("div")
     divArticlesMusica.classList.add("divArticlesMusica")
 

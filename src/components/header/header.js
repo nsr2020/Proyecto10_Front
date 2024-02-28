@@ -4,7 +4,7 @@ import { getMusicPage } from "../../pages/USER/getMusicPage/getMusic"
 import {  createLogin } from "../../pages/USER/login/login"
 import { createRegister } from "../../pages/USER/register/register"
 import { createMain } from "../main/main"
-import { apagarSectionFiltros, encenderSectionFiltros } from "../sectionFiltros/sectionFiltros"
+import { apagarSectionFiltros, conectarSectionFiltros, desconectarSectionFiltros, encenderSectionFiltros } from "../sectionFiltros/sectionFiltros"
 
 import "./header.css"
 
@@ -42,6 +42,7 @@ export const createHeader = () =>{
     const imgMusic = document.querySelector(".imgMusic")
     imgMusic.addEventListener("click", () =>{
         encenderSectionFiltros()
+        conectarSectionFiltros()
         getMusicPage() 
     })
 
@@ -63,13 +64,14 @@ export const createHeader = () =>{
     imgLogOut2.addEventListener("click", () =>{
         localStorage.clear()
         encenderSectionFiltros()
+        conectarSectionFiltros()
         headerUser()
         createMain()
         
     })
     const imgFavoritos2 = document.querySelector(".imgFavoritos")
     imgFavoritos2.addEventListener("click", () =>{
-        apagarSectionFiltros()
+        desconectarSectionFiltros()
         Favoritos()
         headerUser()
     })
