@@ -88,7 +88,7 @@ export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
             like.style.pointerEvents ="none"
             deleteMusicFav.style.display ="none"
         } else {
-            like.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080172/Proyecto10Musica/borrar_qyeohj.png";
+            like.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080282/Proyecto10Musica/estrellavacia_orqdj7.png";
             deleteMusicFav.style.display ="none"
         }
 
