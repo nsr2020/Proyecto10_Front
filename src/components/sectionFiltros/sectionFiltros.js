@@ -18,6 +18,9 @@ opcionesTipos.forEach((tipo) => {
     opcion.text = tipo;
     opcion.value =tipo;
     selectType.appendChild(opcion);
+    if (tipo === "All") {
+        selectType.value = tipo;
+    }
 });
 
 

@@ -17,13 +17,13 @@ export const createHeader = () =>{
     <nav class="navHeader">
     <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708705843/Proyecto10Musica/MusicHeader_abp3ma.png"
     class="imgMusic">
-    <img src="../../../public/contrasena.png"
+    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/contrasena_rqjjer.png"
     class="imgLogin">
-    <img src="../../../public/register.png"
+    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/register_nefkco.png"
     class="imgRegister">
     <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708803826/Proyecto10Musica/favs_dkvjfh.png"
     class="imgFavoritos">
-    <img src="../../../public/nuevo.png"
+    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080090/Proyecto10Musica/nuevo_fchres.png"
     class="imgPost">
     <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708803320/Proyecto10Musica/585e481dcb11b227491c338c_tboead.png"
     class="imgLogOut">

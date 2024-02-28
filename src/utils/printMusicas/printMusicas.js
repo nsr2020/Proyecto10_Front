@@ -38,17 +38,17 @@ export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
 
         const deleteMusicFav = document.createElement("img")
         deleteMusicFav.classList.add("deleteMusicFav")
-        deleteMusicFav.src ="../../../public/borrar.png"
+        deleteMusicFav.src ="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080172/Proyecto10Musica/borrar_qyeohj.png"
 
         const deleteMusic = document.createElement("img")
         deleteMusic.classList.add("deleteMusic")
-        deleteMusic.src = "../../../public/papelera-de-reciclaje.png"
+        deleteMusic.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080033/Proyecto10Musica/papelera-de-reciclaje_mqckz7.png"
         deleteMusic.style.display = "none"
 
 
         const updateMusic = document.createElement("img")
         updateMusic.classList.add("updateMusic")
-        updateMusic.src ="../../../public/actualizar.png"
+        updateMusic.src ="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/actualizar_c93esh.png"
         updateMusic.style.display ="none"
         
         like.addEventListener("click", () => {
@@ -84,11 +84,11 @@ export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
         }
         
         if (user?.favoritos?.includes(musica._id)) {
-            like.src = "../../../public/estrella.png";
+            like.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080281/Proyecto10Musica/estrella_ug0psv.png";
             like.style.pointerEvents ="none"
             deleteMusicFav.style.display ="none"
         } else {
-            like.src = "../../../public/estrellasinrelleno.png";
+            like.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080172/Proyecto10Musica/borrar_qyeohj.png";
             deleteMusicFav.style.display ="none"
         }
 
