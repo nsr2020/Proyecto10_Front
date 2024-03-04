@@ -19,7 +19,7 @@ export const removeFavorito = async (idMusica)=>{
         body: objetoFinal
       };
       const res = await fetch(
-        `http://localhost:8000/api/v1/users/remove-favs/${user._id}`,
+        `https://proyecto10-back.vercel.app/api/v1/users/remove-favs/${user._id}`,
         opciones
       );
       const respuesta = await res.json();

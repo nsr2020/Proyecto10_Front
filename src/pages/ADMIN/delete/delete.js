@@ -3,7 +3,7 @@ import { encenderSectionFiltros, limpiarFiltros } from "../../../components/sect
 import "./delete.css"
 
 export const createDeleteMusica = async (idMusica) =>{
-    const res = await fetch(`http://localhost:8000/api/v1/musicas/${idMusica}`, {
+    const res = await fetch(`https://proyecto10-back.vercel.app/api/v1/musicas/${idMusica}`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${localStorage.getItem("token")}`,

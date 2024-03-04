@@ -30,7 +30,7 @@ const registerSubmit = async () => {
     const password = document.querySelector("#password").value;
   
   
-    const res = await fetch("http://localhost:8000/api/v1/users/register", {
+    const res = await fetch("https://proyecto10-back.vercel.app/api/v1/users/register", {
       headers: {
         "Content-Type": "application/json",
       },

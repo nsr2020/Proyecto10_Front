@@ -25,7 +25,7 @@ export const addFavorito = async (idMusica) => {
     };
   
     const res = await fetch(
-      `http://localhost:8000/api/v1/users/${user._id}`,
+      `https://proyecto10-back.vercel.app/api/v1/users/${user._id}`,
       opciones
     );
   

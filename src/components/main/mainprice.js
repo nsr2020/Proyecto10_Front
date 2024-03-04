@@ -10,7 +10,7 @@ export const createMainPrice = async (value) =>{
     const sectionGeneral = document.querySelector(".sectionGeneral")
     sectionGeneral.innerHTML=""
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/musicas/price/${value}/`)
+      const res = await fetch(`https://proyecto10-back.vercel.app/api/v1/musicas/price/${value}/`)
       const musicas = await res.json()
      
         printMusicas(musicas, sectionGeneral, estoyenFav)

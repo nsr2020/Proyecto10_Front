@@ -16,7 +16,7 @@ export const createMainSelect = async (selectvalue) =>{
     const sectionGeneral = document.querySelector(".sectionGeneral")
     sectionGeneral.innerHTML =""
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/musicas/kind/${selectvalue}`)
+      const res = await fetch(`https://proyecto10-back.vercel.app/api/v1/musicas/kind/${selectvalue}`)
       const musicas = await res.json()
     
         printMusicas(musicas, sectionGeneral,estoyenFav)

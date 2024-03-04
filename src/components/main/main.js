@@ -12,7 +12,7 @@ export const createMain = async () =>{
     sectionGeneral.classList.add("sectionGeneral")
    
     try {
-      const res = await fetch("http://localhost:8000/api/v1/musicas")
+      const res = await fetch("https://proyecto10-back.vercel.app/api/v1/musicas")
       const musicas = await res.json()
         printMusicas(musicas, sectionGeneral,estoyenFav)
         headerUser()

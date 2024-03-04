@@ -1,5 +1,4 @@
-import { createMain } from "../../components/main/main";
-import { apagarSectionFiltros, encenderSectionFiltros, limpiarFiltros } from "../../components/sectionFiltros/sectionFiltros";
+import { apagarSectionFiltros} from "../../components/sectionFiltros/sectionFiltros";
 import { createDeleteMusica } from "../../pages/ADMIN/delete/delete";
 import { createUpdateMusica } from "../../pages/ADMIN/update/update";
 import { addFavorito } from "../addFavorito";

@@ -67,7 +67,7 @@ try {
         }
     }
 
-    const res = await fetch("http://localhost:8000/api/v1/users/login", opciones)
+    const res = await fetch("https://proyecto10-back.vercel.app/api/v1/users/login", opciones)
 
     if (res.status === 400) {
         const pError = document.createElement("p");

@@ -10,7 +10,7 @@ export const Favoritos = async () => {
   
     const user = JSON.parse(localStorage.getItem("user"));
   
-    const res = await fetch(`http://localhost:8000/api/v1/users/${user._id}`);
+    const res = await fetch(`https://proyecto10-back.vercel.app/api/v1/users/${user._id}`);
   
     const usuario = await res.json();
   
