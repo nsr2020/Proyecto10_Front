@@ -6,14 +6,6 @@ import { removeFavorito } from "../removeFavorito";
 
 
 export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
-
-  /*   if(!musicas.length){
-        alert("No hay canciones bajo los criterios buscados")
-        encenderSectionFiltros()
-        limpiarFiltros()
-        createMain()
-    }
-    */
     const divArticlesMusica = document.createElement("div")
     divArticlesMusica.classList.add("divArticlesMusica")
 
