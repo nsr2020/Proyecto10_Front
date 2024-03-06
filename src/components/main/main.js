@@ -14,7 +14,7 @@ export const createMain = async (vengoDeInicio=false) =>{
 
     if(vengoDeInicio){
     const loadingpic = document.createElement("img")
-    loadingpic.src="../../../public/load1.gif"
+    loadingpic.src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709749028/Proyecto10Musica/load1_qjxljz.gif"
     loadingpic.classList.add("cargando")
     sectionGeneral.append(loadingpic)
     document.body.append(sectionGeneral) 
