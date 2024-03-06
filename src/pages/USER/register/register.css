@@ -7,7 +7,7 @@
 }
 .formRegister{
     width: 250px;
-    height: 300px;
+    height: 350px;
     padding: var(--nsr-padd3);
     display: flex;
     align-items: center;
