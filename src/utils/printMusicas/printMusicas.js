@@ -1,3 +1,4 @@
+import { encenderImgMusica } from "../../components/header/header";
 import { apagarSectionFiltros} from "../../components/sectionFiltros/sectionFiltros";
 import { createDeleteMusica } from "../../pages/ADMIN/delete/delete";
 import { createUpdateMusica } from "../../pages/ADMIN/update/update";
@@ -8,8 +9,8 @@ import { removeFavorito } from "../removeFavorito";
 export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
     const divArticlesMusica = document.createElement("div")
     divArticlesMusica.classList.add("divArticlesMusica")
-
     for (const musica of musicas) {
+        nodoPadre.innerHTML =""
         const article = document.createElement("article");
         article.classList.add("article");
 
@@ -61,6 +62,7 @@ export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
         })
         updateMusic.addEventListener("click",() =>{
             apagarSectionFiltros()
+            encenderImgMusica()
             createUpdateMusica(musica._id,musica)  
         })
         deleteMusic.addEventListener("click", () =>{
@@ -105,6 +107,7 @@ export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
       document.body.append(nodoPadre) 
     
 }
+
 }
 
 

@@ -7,7 +7,13 @@
     align-items: center;
     background-color: #db9200;
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    padding-top: 30px;
     
+}
+.cargando{
+    width:250px ;
+    height: 270px;
+    margin-top: -150px;
 }
 
 .divArticlesMusica{
@@ -34,11 +40,8 @@
     flex-direction: column;
     border: 11px groove var(--nsr-color2);
     border-radius: 20px;
-    background-color: var(--nsr-color3);
-background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
-box-shadow: 14px 14px 13px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 14px 14px 13px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 14px 14px 13px 0px rgba(0,0,0,0.75);
+    background-image: linear-gradient(45deg, #FFEB3B, #FFFFFF, #2196F3);
+box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .divImg{
 width: 100px;
@@ -92,6 +95,10 @@ transition: all 0.5s;
     top: 10px;
     left: 10px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.deleteMusicFav:hover{
+    transform: scale(1.1);
 }
 
 .deleteMusic{

@@ -46,12 +46,10 @@
 }
 
 body{
-width: 100%;
+  width: 100%;
   position: relative;
-  background-color: rgb(235, 143, 101);
-  background-image: url(./public/load1.gif);
-  background-size: contain;
-
+  background-color: var(--nsr-color1);
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 } 
 
 

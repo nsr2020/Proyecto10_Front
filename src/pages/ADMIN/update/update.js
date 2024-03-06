@@ -13,11 +13,11 @@ export const createUpdateMusica = (idMusica, musica) =>{
         
         sectionGeneral.innerHTML = `
         <form class="formPut">
-            <input type="text" placeholder="url imagen" id="urlPost" />
-            <input type="text" id="singerPost" placeholder=" Nombre Cantante" />
-            <input type="text" id="albumPost" placeholder="Nombre Album" />
+            <input type="text" placeholder="URL Imagén" id="urlPost" />
+            <input type="text" id="singerPost" placeholder=" Nombre/Cantante" />
+            <input type="text" id="albumPost" placeholder="Nombre/Album" />
             <input type="number" id="pricePost" placeholder="Precio > 0€" />
-            <select id="selectPost" name="opciones" >
+            <select id="selectPut" name="opciones" >
             <option value="" disabled selected hidden>Selecciona una opción</option>
             <option value="Pop">Pop</option>
             <option value="Metal">Metal</option>
@@ -43,7 +43,7 @@ export const createUpdateMusica = (idMusica, musica) =>{
     let singer = document.querySelector("#singerPost").value || musica.singer;
     let album = document.querySelector("#albumPost").value || musica.album;
     let price = document.querySelector("#pricePost").value || musica.price;
-    let kind = document.querySelector("#selectPost").value || musica.kind;
+    let kind = document.querySelector("#selectPut").value || musica.kind;
   
 
    if(price<=0){

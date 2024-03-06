@@ -1,5 +1,5 @@
 
-import { headerUser } from "../../../components/header/header"
+import { apagarImgMusica, headerUser } from "../../../components/header/header"
 import { createMain } from "../../../components/main/main"
 import { encenderSectionFiltros } from "../../../components/sectionFiltros/sectionFiltros"
 import "./login.css"
@@ -23,12 +23,12 @@ export const createLogin = () => {
 
 const login = (nodoPadre) =>{
     const form =document.createElement("form")
-
+    const h1Login = document.createElement("h1")
     const inputUN = document.createElement("input")
     const inputPass = document.createElement("input")
     const btn = document.createElement("button")
 
-    
+    h1Login.classList.add("h1Login")
     inputUN.classList.add("inputUN")
     inputPass.classList.add("inputPass")
     btn.classList.add("btnLogin")
@@ -36,10 +36,12 @@ const login = (nodoPadre) =>{
     inputUN.required =true;
     inputPass.required = true;
     inputPass.type ="password"
-    inputUN.placeholder = "User Name";
-    inputPass.placeholder = "*****";
+    inputUN.placeholder = "Username";
+    inputPass.placeholder = "Password";
     btn.textContent = "Login";
+    h1Login.textContent = "Iniciar Sesión"
 
+    form.append(h1Login)
     form.append(inputUN)
     form.append(inputPass)
     form.append(btn)
@@ -50,9 +52,8 @@ const login = (nodoPadre) =>{
     });
 }
 
-const submit = async (userName, password, form) =>{
+export const submit = async (userName, password, form) =>{
     
-
 try {
     const objetoFinal = JSON.stringify({
         userName,
@@ -93,6 +94,7 @@ try {
    encenderSectionFiltros()
    createMain()  
    headerUser()
+   apagarImgMusica()
 } catch (error) {
     console.log(error);
 }

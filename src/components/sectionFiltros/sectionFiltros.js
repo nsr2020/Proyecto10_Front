@@ -37,7 +37,7 @@ btnPrice.style.pointerEvents = "none"
 
 const btnLimpiarFiltros = document.createElement("button")
 btnLimpiarFiltros.classList.add("btnLimpiar")
-btnLimpiarFiltros.textContent ="🆑"
+btnLimpiarFiltros.textContent ="Limpiar"
 
 divPrice.append(inputPrice, btnPrice);
 sectionFiltro.append(selectType, divPrice,btnLimpiarFiltros);
@@ -84,7 +84,7 @@ btnPrice.addEventListener("click", () =>{
 
 btnLimpiarFiltros.addEventListener("click", ()=>{
    limpiarFiltros()
-    createMain()
+    /* createMain() */
 })
 
 }

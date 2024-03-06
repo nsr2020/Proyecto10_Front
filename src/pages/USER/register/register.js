@@ -1,6 +1,4 @@
-import { headerUser } from "../../../components/header/header"
-import { createMain } from "../../../components/main/main"
-import { encenderSectionFiltros, limpiarFiltros } from "../../../components/sectionFiltros/sectionFiltros"
+import { submit } from "../login/login"
 import "./register.css"
 
 export const createRegister = () =>{
@@ -10,6 +8,7 @@ export const createRegister = () =>{
 
     sectionGeneral.innerHTML =`
     <form class="formRegister">
+    <h1 class="h1Register">Registrarse</h1>
     <input type="text" placeholder="Username" id="username" required/>
     <input type="password" id="password" placeholder="Password"  required/>
     <button id="registerbtn">Register</button>
@@ -60,11 +59,7 @@ const registerSubmit = async () => {
 
   
   if  (res.status === 201){
-    alert(`Ya puedes hacer login con tus nuevas credenciales!!!`);
+    submit(username, password)
   }
     
-    encenderSectionFiltros()
-    limpiarFiltros()
-    createMain()
-    headerUser()
   };

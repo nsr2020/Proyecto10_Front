@@ -1,6 +1,6 @@
-import { createHeader } from "../../../components/header/header"
+import { apagarImgMusica, apagarLogin, apagarRegister, createHeader } from "../../../components/header/header"
 import { createMain } from "../../../components/main/main"
-import { createSectionFiltros } from "../../../components/sectionFiltros/sectionFiltros"
+import { createSectionFiltros, desconectarSectionFiltros } from "../../../components/sectionFiltros/sectionFiltros"
 import "./startPage.css"
 
 export const startPage = () =>{
@@ -16,13 +16,20 @@ export const startPage = () =>{
     imgStart.addEventListener("click", () =>{
         divStartPage.style.display ="none"
       
-      
+            const vengoDeInicio = true;
+
+            
             createHeader()
             createSectionFiltros()
-    
-        setTimeout(function(){
-            createMain()
-        },1000)
+            desconectarSectionFiltros()
+            apagarImgMusica()
+            apagarLogin()
+            apagarRegister()
+        
+
+            createMain(vengoDeInicio)
+            
+        
         
     })
 }

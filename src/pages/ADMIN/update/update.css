@@ -8,42 +8,51 @@
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
     
   }
-  .sectionPut>form{
-      width: 100%;
-      height: 85svh;
+  .formPut{
+      width: 275px;
+      height: 400px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: var(--nsr-gap2);
+      border: 2px solid black;
+      border-radius: var(--nsr-bradiusS);
+      background-image: url("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709674890/Proyecto10Musica/94764ee9e351fe8e3e7598902f24e5cd_v0tvnx.jpg");
+      box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+      -webkit-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+      -moz-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
   }
-  .sectionPut>form>input{
-   width: 250px;
+  .formPut>input{
+   width: 200px;
+   background-color: rgb(241, 241, 77);
    padding: var(--nsr-padd1);
-   border-radius: var(--nsr-bradiusM);
-   border: none;
-   background-color: var(--nsr-color3);
+   border-radius: var(--nsr-bradiusS);
    font-family: 'Courier New', Courier, monospace;
-   font-size: 15px;
    font-weight: bold;
+   color: black;
+   border: 1px solid black;
   }
-  .sectionPut>form>select{
-      width: 250px;
+  #selectPut{
+      width: 230px;
       padding: var(--nsr-padd1);
       border-radius: var(--nsr-bradiusM);
       border: none;
-      background-color: var(--nsr-color5);
+      background-color: #F6995C;
       font-family: 'Courier New', Courier, monospace;
       font-size: 15px;
       font-weight: bold;
   }
-  .sectionPut>form>button{
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 15px;
-      font-weight: bold;
-      border-radius: var(--nsr-bradiusM);
-      border: none;
-      padding: var(--nsr-padd1);
-      background-color: var(--nsr-color6);
-      cursor: pointer;
+  .formPut>button{
+    padding: var(--nsr-padd1) var(--nsr-padd3);
+    font-weight: bolder;
+    border-radius: var(--nsr-bradiusS);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: rgb(241, 241, 77);
+    font-size: 15px;
+  }
+  .sectionPut>form>button:hover{
+    transform: scale(1.1);
   }

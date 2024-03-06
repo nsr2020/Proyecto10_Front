@@ -1,3 +1,4 @@
+
 import { createPostRegister } from "../../pages/ADMIN/post/post"
 import { Favoritos } from "../../pages/USER/Favs/favoritos"
 import { getMusicPage } from "../../pages/USER/getMusicPage/getMusic"
@@ -15,18 +16,12 @@ export const createHeader = () =>{
 
     header.innerHTML = `
     <nav class="navHeader">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708705843/Proyecto10Musica/MusicHeader_abp3ma.png"
-    class="imgMusic">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/contrasena_rqjjer.png"
-    class="imgLogin">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/register_nefkco.png"
-    class="imgRegister">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708803826/Proyecto10Musica/favs_dkvjfh.png"
-    class="imgFavoritos">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080090/Proyecto10Musica/nuevo_fchres.png"
-    class="imgPost">
-    <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708803320/Proyecto10Musica/585e481dcb11b227491c338c_tboead.png"
-    class="imgLogOut">
+    <h1 class="imgMusic">Home</h1>
+    <h1 class="imgLogin">Login</h1>
+    <h1 class="imgRegister">Register</h1>
+    <h1 class="imgFavoritos">Favoritos</h1>
+    <h1 class="imgPost">Post</h1>
+    <h1 class="imgLogOut">Log-Out</h1>
     </nav>
     `
     document.body.append(header)
@@ -43,13 +38,19 @@ export const createHeader = () =>{
     imgMusic.addEventListener("click", () =>{
         encenderSectionFiltros()
         conectarSectionFiltros()
-        getMusicPage() 
+        getMusicPage()
+        apagarImgMusica()
+        encenderImgFavs()
+        encenderPost()
     })
 
     const imgLogin = document.querySelector(".imgLogin")
     imgLogin.addEventListener("click", () =>{
         apagarSectionFiltros()
         createLogin() 
+        encenderImgMusica()
+        encenderRegister()
+        apagarLogin()
 
     })
    
@@ -58,6 +59,9 @@ export const createHeader = () =>{
         apagarSectionFiltros()
         createRegister()
         headerUser()
+        encenderImgMusica()
+        apagarRegister()
+        encenderLogin()
 
     })
    const imgLogOut2 = document.querySelector(".imgLogOut")
@@ -67,13 +71,18 @@ export const createHeader = () =>{
         conectarSectionFiltros()
         headerUser()
         createMain()
+        apagarImgMusica()
+       
         
     })
     const imgFavoritos2 = document.querySelector(".imgFavoritos")
     imgFavoritos2.addEventListener("click", () =>{
         desconectarSectionFiltros()
+        apagarSectionFiltros()
         Favoritos()
         headerUser()
+        encenderImgMusica()
+        apagarImgFavs()
     })
 
     const imgPost2 = document.querySelector(".imgPost")
@@ -81,6 +90,8 @@ export const createHeader = () =>{
         apagarSectionFiltros()
         createPostRegister()
         headerUser()
+        encenderImgMusica()
+        apagarPost()
     })
  
 }
@@ -124,4 +135,54 @@ export const headerUser = () =>{
         const imgLogOut = document.querySelector(".imgLogOut")
         imgLogOut.style.display ="none"
     }
+}
+
+//Estos interruptores los he realizado para controlar click no deseados y que si ya estás dentro de un apartado no puedas hacer click otra vez
+
+
+ export const apagarImgMusica = () =>{
+    const imgMusic = document.querySelector(".imgMusic")
+    imgMusic.style.pointerEvents = "none";
+}
+
+export const encenderImgMusica = () =>{
+    const imgMusic = document.querySelector(".imgMusic")
+    imgMusic.style.pointerEvents = "auto";
+}
+
+export const apagarImgFavs = () =>{
+    const imgFav = document.querySelector(".imgFavoritos")
+    imgFav.style.pointerEvents = "none";
+}
+
+export const encenderImgFavs = () =>{
+    const imgFav = document.querySelector(".imgFavoritos")
+    imgFav.style.pointerEvents = "auto";
+}
+export const encenderLogin = () =>{
+    const imgLogin = document.querySelector(".imgLogin")
+    imgLogin.style.pointerEvents = "auto";
+}
+
+export const apagarLogin = () =>{
+    const imgLogin = document.querySelector(".imgLogin")
+    imgLogin.style.pointerEvents = "none";
+}
+export const encenderRegister =() =>{
+    const imgRegister = document.querySelector(".imgRegister")
+    imgRegister.style.pointerEvents = "auto";
+}
+
+export const apagarRegister = () =>{
+    const imgRegister = document.querySelector(".imgRegister")
+    imgRegister.style.pointerEvents = "none";
+}
+
+export const encenderPost = () =>{
+    const imgPost = document.querySelector(".imgPost")
+    imgPost.style.pointerEvents = "auto";
+}
+export const apagarPost = () =>{
+    const imgPost = document.querySelector(".imgPost")
+    imgPost.style.pointerEvents = "none";
 }

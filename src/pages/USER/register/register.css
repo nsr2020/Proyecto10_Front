@@ -7,27 +7,81 @@
 }
 .formRegister{
     width: 250px;
-    height: 250px;
+    height: 300px;
+    padding: var(--nsr-padd3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    border: 2px solid black;
+    border-radius: var(--nsr-bradiusS);
+    background-image: url("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709674890/Proyecto10Musica/94764ee9e351fe8e3e7598902f24e5cd_v0tvnx.jpg");
+    box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+-webkit-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+-moz-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+background: #092756;
+background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%)
 }
 #username, #password {
     padding: var(--nsr-padd1);
     border-radius: var(--nsr-bradiusS);
-    border: none;
-    background-color:var(--nsr-color8);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+#username:focus, #password:focus{
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
 }
 #registerbtn{
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color:var(--nsr-color9);
-    cursor: pointer;
+    padding: var(--nsr-padd1) var(--nsr-padd3);
+    font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
+    border-radius: var(--nsr-bradiusS);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: rgb(26, 12, 77);
+    font-size: 15px;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+      );
+      color: white;
+    padding: 4px 10px 4px; 
+   
+    width: 100%;
 }
 #registerbtn:hover{
-    background-color: brown;
+    transform: scale(1.1);
+    
+}
+.h1Register{
+    color: rgb(230, 222, 222);
+    text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    letter-spacing:1px; 
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
 }

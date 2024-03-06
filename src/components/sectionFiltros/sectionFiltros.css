@@ -7,25 +7,46 @@
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
     background-color: #db9200;
     padding: var(--nsr-padd4);
+    border-bottom: 3px double #db9200;
+    
     
 }
 .sectionFiltro>select{
     width: 170px;
     padding: var(--nsr-padd1);
     border-radius: var(--nsr-bradiusM);
-    background-color: var(--nsr-color2);
+    background-color: #F6995C;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
+    background: #092756;
+background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+color: white;
 }
 .sectionFiltro>select>option{
 font-weight: bolder;
 font-size: 12px;
 font-family: 'Courier New', Courier, monospace;
+background-color: #092756;
+
+color: rgb(238, 228, 228);
 }
   
 .divPrice{
    display: flex;
    gap: 20px;
+}
+.divPrice>input{
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+      );
+      color: whitesmoke;
 }
 .divPrice>input, .divPrice>button{
     padding: var(--nsr-padd1);
@@ -36,6 +57,13 @@ font-family: 'Courier New', Courier, monospace;
 .divPrice>button{
     cursor: pointer;
     font-weight: bolder;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+      );
+      color: black;
 }
 .btnLimpiar{
     border: none;
@@ -43,6 +71,7 @@ font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
     background-color: transparent;
     transition: all 0.5s;
+    text-shadow: 4px 1px 2px rgba(233,17,17,0.6);
 }
 .btnLimpiar:hover{
     transform: scale(1.1);
@@ -63,6 +92,10 @@ font-family: 'Courier New', Courier, monospace;
         gap: 10px;
         justify-content: center; 
      }
+     .btnLimpiar{
+        font-size: 20px;
+        margin-left: 25px;
+    }
 }
 
 @media ( max-width:330px){
@@ -75,5 +108,12 @@ font-family: 'Courier New', Courier, monospace;
      .divPrice>button{
     width: 50px;
     text-align: center;
+    }
+    .btnLimpiar{
+        font-size: 16px;
+    }
+    .divPrice>button{
+       font-size: 13px;
+      text-align: center;
     }
 }
