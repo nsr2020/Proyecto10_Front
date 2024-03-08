@@ -1,4 +1,4 @@
-import { printMusicas } from "../../../utils/printMusicas/printMusicas";
+import { printMusicas } from "../../../pages/printMusicas/printMusicas";
 import "./favoritos.css"
 
 

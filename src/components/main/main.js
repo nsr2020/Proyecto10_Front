@@ -1,6 +1,6 @@
 
 
-import { printMusicas } from "../../utils/printMusicas/printMusicas"
+import { printMusicas } from "../../pages/printMusicas/printMusicas"
 import { encenderLogin, encenderRegister, headerUser } from "../header/header"
 import { conectarSectionFiltros} from "../sectionFiltros/sectionFiltros"
 import "./main.css"

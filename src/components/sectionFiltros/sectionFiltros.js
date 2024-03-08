@@ -69,6 +69,7 @@ inputPrice.addEventListener("input", () =>{
 btnPrice.addEventListener("click", () =>{
     const optionvalue = document.querySelector(".selecType").value;
     const pricevalue = document.querySelector(".inputPrice").value;
+    console.log(optionvalue, pricevalue);
 
     if(pricevalue <= 0 || pricevalue === ""){
         alert("Por favor introduce un numero mayor a 0!!")
@@ -76,9 +77,12 @@ btnPrice.addEventListener("click", () =>{
     }
 
     if (optionvalue!="Todas" && pricevalue > 0) {
+       
         createMainSelectAndPrice(optionvalue, pricevalue);
-    } else {
+    } else if (optionvalue === "Todas" && pricevalue > 0) {
             createMainPrice(pricevalue);  
+    }else{
+        createMainPrice(pricevalue);
     }
 });
 
@@ -104,7 +108,6 @@ export const apagarSectionFiltros = () =>{
     const sectionFiltro = document.querySelector(".sectionFiltro")
     sectionFiltro.style.display = "none"
 }
-
 export const encenderSectionFiltros = () =>{
     const sectionFiltro = document.querySelector(".sectionFiltro")
     sectionFiltro.style.display = "flex"
@@ -119,7 +122,6 @@ const btnLimpiar = document.querySelector(".btnLimpiar")
  btnLimpiar.disabled = true;   
  btnLimpiar.style.pointerEvents = "none"
 }
-
 export const conectarSectionFiltros = () =>{
 const inputPrice = document.querySelector(".inputPrice")
 inputPrice.disabled = false;

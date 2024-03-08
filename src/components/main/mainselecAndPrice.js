@@ -1,5 +1,5 @@
 
-import { printMusicas } from "../../utils/printMusicas/printMusicas"
+import { printMusicas } from "../../pages/printMusicas/printMusicas"
 import { headerUser } from "../header/header"
 import { createMain } from "./main"
 import "./main.css"

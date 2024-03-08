@@ -2,9 +2,8 @@ import { encenderImgMusica } from "../../components/header/header";
 import { apagarSectionFiltros} from "../../components/sectionFiltros/sectionFiltros";
 import { createDeleteMusica } from "../../pages/ADMIN/delete/delete";
 import { createUpdateMusica } from "../../pages/ADMIN/update/update";
-import { addFavorito } from "../addFavorito";
-import { removeFavorito } from "../removeFavorito";
-
+import { addFavorito } from "../../utils/addFavorito";
+import { removeFavorito } from "../../utils/removeFavorito";
 
 export const printMusicas = async (musicas, nodoPadre,estoyenFav) => {
     const divArticlesMusica = document.createElement("div")
