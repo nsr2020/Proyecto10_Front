@@ -6,7 +6,7 @@ import "./startPage.css"
 export const startPage = () =>{
     const divStartPage = document.getElementById("app")
     divStartPage.innerHTML = ""
-    divStartPage.classList.add("startPage")
+    divStartPage.classList.add("startPage", "flex-container")
     divStartPage.innerHTML = `
     <p> Let's Dance... </p>
     <img src="https://res.cloudinary.com/dnju3aw4b/image/upload/v1708541667/Proyecto10Musica/logostartMusic_gnganr.png" 

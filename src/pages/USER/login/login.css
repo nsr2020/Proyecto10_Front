@@ -1,58 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 .sectionLogin{
     width: 100%;
     min-height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--nsr-color1);
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    background-image: var(--nsr-bgimage2);
     font-family: 'Open Sans', sans-serif;
     
 }
 .sectionLogin>.login{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    flex-direction: column;   
 }
-.login>form{
+.formLogin{
     width: 250px;
     height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: var(--nsr-gap5);
-    border: 2px solid black;
+    border: 2px solid var(--nsr-color18);
     padding: var(--nsr-padd3);
     border-radius: var(--nsr-bradiusS);
     box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
--webkit-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
--moz-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
-background: #092756;
-background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
-background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
-background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
-background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
-background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    -webkit-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+    -moz-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
 
 }
 .inputUN, .inputPass{
     padding: var(--nsr-padd1);
-    border-radius: var(--nsr-bradiusS);
-    font-family: 'Courier New', Courier, monospace;
     width: 100%; 
-	margin-bottom: 10px; 
+	margin-bottom: var(--nsr-bor1); 
 	background: rgba(0,0,0,0.3);
-	border: none;
 	outline: none;
-	padding: 10px;
+	padding: var(--nsr-padd1);
 	font-size: 13px;
-	color: #fff;
+	color: var(--nsr-color23);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 4px;
@@ -69,14 +57,14 @@ background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4)
 }
 
 .btnLogin{
-    padding: var(--nsr-padd1) var(--nsr-padd3);
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
+    font-weight: var(--nsr-fontweight1);
     border-radius: var(--nsr-bradiusS);
-    border: 1px solid black;
-    cursor: pointer;
-    transition: all 0.5s;
-    background-color: rgb(26, 12, 77);
+    border: 1px solid var(--nsr-color18);
+    cursor: var(--nsr-pointer);
+    transition: var(--nsr-transition1);
+    background-color: var(--nsr-color22);
     font-size: 15px;
     background-image: linear-gradient(
         150deg,
@@ -84,13 +72,11 @@ background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4)
         #09f,
         #00DDFF
       );
-      color: white;
+      color: var(--nsr-color13);
     padding: 4px 10px 4px; 
-   
-    width: 100%;
 }
 .btnLogin:hover{
-    transform: scale(1.1);
+    transform: scale(var(--nsr-scale1));
 }
 .h1Login{
     color: rgb(230, 222, 222);

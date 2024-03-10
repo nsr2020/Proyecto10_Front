@@ -1,58 +1,51 @@
 .sectionPut{
     width: 100%;
     height: 85svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #db9200;
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    
-  }
-  .formPut{
+    background-color:var(--nsr-color1);
+    background-image: var(--nsr-bgimage1)
+}
+.formPut{
       width: 275px;
       height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
       gap: var(--nsr-gap2);
-      border: 2px solid black;
+      border: 2px solid var(--nsr-color18);
       border-radius: var(--nsr-bradiusS);
-      background-image: url("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709674890/Proyecto10Musica/94764ee9e351fe8e3e7598902f24e5cd_v0tvnx.jpg");
+      background-image: var(--nsr-bgimage3);
       box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
       -webkit-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
       -moz-box-shadow: -16px 6px 10px 0px rgba(25,18,22,0.75);
   }
   .formPut>input{
    width: 200px;
-   background-color: rgb(241, 241, 77);
+   background-color: var(--nsr-color21);
    padding: var(--nsr-padd1);
    border-radius: var(--nsr-bradiusS);
    font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
-   color: black;
-   border: 1px solid black;
+   color: var(--nsr-color18);
+   border: 1px solid var(--nsr-color18);
   }
   #selectPut{
       width: 230px;
       padding: var(--nsr-padd1);
       border-radius: var(--nsr-bradiusM);
       border: none;
-      background-color: #F6995C;
+      background-color: var(--nsr-color14);
       font-family: 'Courier New', Courier, monospace;
       font-size: 15px;
       font-weight: bold;
   }
   .formPut>button{
     padding: var(--nsr-padd1) var(--nsr-padd3);
-    font-weight: bolder;
+    font-weight: var(--nsr-fontWeight1);
     border-radius: var(--nsr-bradiusS);
-    border: 1px solid black;
-    cursor: pointer;
-    transition: all 0.5s;
-    background-color: rgb(241, 241, 77);
+    border: 1px solid var(--nsr-color18);
+    cursor: var(--nsr-pointer);
+    transition: var(--nsr-transition1);
+    background-color: var(--nsr-color21);
     font-size: 15px;
   }
   .sectionPut>form>button:hover{
-    transform: scale(1.1);
+    transform: scale(var(--nsr-scale1));
   }

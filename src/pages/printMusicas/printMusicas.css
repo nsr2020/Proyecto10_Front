@@ -1,0 +1,115 @@
+
+.article{
+    position: relative;
+    width:250px;
+    height:270px;
+    flex-direction: column;
+    border: 11px groove var(--nsr-color2);
+    border-radius: var(--nsr-bradiusX);
+    background-image: linear-gradient(45deg, #FFEB3B, #FFFFFF, #2196F3);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.divImg{
+width: var(--nsr-width2);
+height: var(--nsr-height2);
+border-radius: var(--nsr-bradiusM);
+
+}
+.divImg>img{
+object-fit: cover;
+width: var(--nsr-width2);
+height: var(--nsr-height2);
+border-radius: 100%;
+transition: var(--nsr-transition1);
+}
+.divImg>img:hover{
+   transform: rotate(-45deg) scale(0.8);
+}   
+
+.divInfo{
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    gap:var(--nsr-padd1);
+}
+.divInfo h3:hover{
+    color: var(--nsr-color11);
+}
+.divInfo p:first-of-type:hover{
+    color: var(--nsr-color12);
+    scale:var(--nsr-scale1);
+}
+/*Imagen de cuando se hace like y cambia de color*/
+.like{
+    width: var(--nsr-width1);
+    height:var(--nsr-height1);
+    position: absolute;
+    top: var(--nsr-top1);
+    right: var(--nsr-right1);
+    cursor: pointer;
+}
+/*Imagenes de cuando se hace login como user y en el apartado de favoritos que quiere eliminar de la lista*/
+.deleteMusicFav{
+    width: var(--nsr-width1);
+    height: var(--nsr-height1);
+    position: absolute;
+    top: var(--nsr-top1);
+    left: var(--nsr-left1);
+    cursor: var(--nsr-pointer);
+    transition:var(--nsr-transition1);
+}
+/*Imagenes de cuando se hace login como admin*/
+.deleteMusic{
+    width: var(--nsr-width1);
+    height: var(--nsr-height1);
+    position: absolute;
+    bottom: var(--nsr-bottom1);
+    left: var(--nsr-left1);
+    cursor: var(--nsr-pointer);
+    transition: var(--nsr-transition1);
+}
+.updateMusic{
+    width: var(--nsr-width1);
+    height: var(--nsr-height1);
+    position: absolute;
+    bottom: var(--nsr-bottom1);
+    right: var(--nsr-right1);
+    cursor: var(--nsr-pointer);
+    transition: var(--nsr-transition1);
+}
+
+.deleteMusicFav:hover, .deleteMusic:hover, .updateMusic:hover{
+    transform: scale(var(--nsr-scale1));
+}
+
+@media(max-width:600px){
+    .divArticlesMusica{
+        gap: var(--nsr-gap2);
+    }
+    .article{
+        width:200px;
+        height:230px;
+    }
+    .divImg{
+        width: 70px;
+        height: 70px;
+        }
+        .divImg>img{
+          width: 60px;
+        height: 60px;
+        }
+        .divInfo{
+            gap: 8px;
+        }
+        .divInfo h3, .divInfo h4{
+            font-size: 12px;
+        }
+        .divInfo p{
+            font-size: 12px;
+        }
+}
+
+
+
+
+

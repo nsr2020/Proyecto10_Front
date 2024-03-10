@@ -7,7 +7,7 @@ export const createRegister = () =>{
     sectionGeneral.classList.add("sectionRegister")
 
     sectionGeneral.innerHTML =`
-    <form class="formRegister">
+    <form class="formRegister flex-container">
     <h1 class="h1Register">Registrarse</h1>
     <input type="text" placeholder="Username" id="username" required/>
     <input type="password" id="password" placeholder="Password"  required/>

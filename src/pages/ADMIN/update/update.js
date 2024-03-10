@@ -9,10 +9,10 @@ export const createUpdateMusica = (idMusica, musica) =>{
    
         const sectionGeneral = document.querySelector(".sectionGeneral")
         sectionGeneral.innerHTML = ""
-        sectionGeneral.classList.add("sectionPut")
+        sectionGeneral.classList.add("sectionPut", "flex-container")
         
         sectionGeneral.innerHTML = `
-        <form class="formPut">
+        <form class="formPut flex-container">
             <input type="text" placeholder="URL Imagén" id="urlPost" />
             <input type="text" id="singerPost" placeholder=" Nombre/Cantante" />
             <input type="text" id="albumPost" placeholder="Nombre/Album" />

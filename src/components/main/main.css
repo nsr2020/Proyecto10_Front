@@ -1,151 +1,16 @@
-.sectionGeneral {
+.sectionGeneral{
     width: 100%;
     min-height: 75vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #db9200;
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    padding-top: 30px;
+   flex-wrap: wrap;
+    background-color:var(--nsr-color1);
+    background-image: var(--nsr-bgimage2);
+    padding-top: var(--nsr-padd3);
+    gap:var(--nsr-gap4);
     
 }
+/*Imagen loading del comienzo*/
 .cargando{
     width:250px ;
     height: 270px;
     margin-top: -150px;
 }
-
-.divArticlesMusica{
-    width: 100%;
-    min-height: 75svh;
-    background-color: #db9200;
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--nsr-gap4);
-    padding-bottom: var(--nsr-padd4);
-    
- 
-}
-.article{
-    position: relative;
-    width:250px;
-    height:270px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    border: 11px groove var(--nsr-color2);
-    border-radius: 20px;
-    background-image: linear-gradient(45deg, #FFEB3B, #FFFFFF, #2196F3);
-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-.divImg{
-width: 100px;
-height: 100px;
-border-radius: var(--nsr-bradiusM);
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.divImg>img{
-object-fit: cover;
-width: 100px;
-height: 100px;
-border-radius: 100%;
-transition: all 0.5s;
-}
-.divImg>img:hover{
-   transform: rotate(-45deg) scale(0.8);
-}   
-
-.divInfo{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.divInfo h3:hover{
-    color: blue;
-}
-.divInfo p:first-of-type:hover{
-    color: blueviolet;
-    scale: 1.1;
-}
-
-.like{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.deleteMusicFav{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.deleteMusicFav:hover{
-    transform: scale(1.1);
-}
-
-.deleteMusic{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    cursor: pointer;
-}
-.updateMusic{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-@media(max-width:600px){
-    .divArticlesMusica{
-        gap: var(--nsr-gap2);
-    }
-    .article{
-        width:200px;
-        height:230px;
-    }
-    .divImg{
-        width: 70px;
-        height: 70px;
-        }
-        .divImg>img{
-          width: 60px;
-        height: 60px;
-        }
-        .divInfo{
-            gap: 8px;
-        }
-        .divInfo h3, .divInfo h4{
-            font-size: 12px;
-        }
-        .divInfo p{
-            font-size: 12px;
-        }
-}
-
-
-
-
-

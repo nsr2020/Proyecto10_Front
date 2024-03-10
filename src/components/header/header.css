@@ -3,11 +3,11 @@
     height: 15vh;
     display: flex;
     gap: var(--nsr-gap2);
-    background-color: #d67600;
-    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    background-color: var(--nsr-color20);
+    background-image: var(--nsr-bgimage1);
     box-shadow: 1px 13px 11px -4px rgba(0,0,0,0.62);
--webkit-box-shadow: 1px 13px 11px -4px rgba(0,0,0,0.62);
--moz-box-shadow: 1px 13px 11px -4px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 1px 13px 11px -4px rgba(0,0,0,0.62);
+    -moz-box-shadow: 1px 13px 11px -4px rgba(0,0,0,0.62);
     align-items: center;
     position: sticky;
     top: 0;
@@ -22,12 +22,12 @@
 }
 .header>nav h1{
     
-    cursor: pointer;
-    transition: all 0.5s;
-    text-shadow: 4px 1px 2px rgba(233,17,17,0.6);
+    cursor: var(--nsr-pointer);
+    transition: var(--nsr-transition1);
+    text-shadow: 4px 1px 2px var(--nsr-color19);
 }
 .header>nav h1:hover{
-    transform: scale(1.1);
+    transform: scale(var(--nsr-scale1));
 }
 
 @media (max-width: 600px) {

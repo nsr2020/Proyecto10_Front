@@ -10,7 +10,7 @@ export const sectionGeneral = document.createElement("section")
 export const createMain = async (vengoDeInicio=false) =>{
     const estoyenFav = false; 
     sectionGeneral.innerHTML=""
-    sectionGeneral.classList.add("sectionGeneral")
+    sectionGeneral.classList.add("sectionGeneral" ,"flex-container")
 
     if(vengoDeInicio){
     const loadingpic = document.createElement("img")
@@ -25,7 +25,7 @@ export const createMain = async (vengoDeInicio=false) =>{
       const musicas = await res.json()
       if(vengoDeInicio){
       setTimeout(function () {
-        printMusicas(musicas, sectionGeneral,estoyenFav)
+       printMusicas(musicas, sectionGeneral,estoyenFav)
         headerUser()
         encenderLogin()
         encenderRegister()

@@ -9,13 +9,13 @@ import "./login.css"
 export const createLogin = () => {
     const sectionLogin = document.querySelector(".sectionGeneral")
     
-    sectionLogin.classList.add("sectionLogin")
+    sectionLogin.classList.add("sectionLogin", "flex-container")
 
     sectionLogin.innerHTML =""
 
     const loginDiv = document.createElement("div")
     login(loginDiv)
-    loginDiv.classList.add("login")
+    loginDiv.classList.add("login", "flex-container")
 
     sectionLogin.append(loginDiv)
     document.body.append(sectionLogin)
@@ -28,6 +28,7 @@ const login = (nodoPadre) =>{
     const inputPass = document.createElement("input")
     const btn = document.createElement("button")
 
+    form.classList.add("formLogin", "flex-container")
     h1Login.classList.add("h1Login")
     inputUN.classList.add("inputUN")
     inputPass.classList.add("inputPass")

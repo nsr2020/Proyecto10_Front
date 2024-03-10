@@ -9,9 +9,9 @@ sectionGeneral.innerHTML = ""
 sectionGeneral.classList.add("sectionPost")
 
 sectionGeneral.innerHTML = `
-<form class="formPost">
+<form class="formPost flex-container">
     <input type="text" placeholder="URL Imagén" id="urlPost" required/>
-    <input type="text" id="singerPost" placeholder=" Nombre/Cantante" required/>
+    <input type="text" id="singerPost" placeholder="Nombre/Cantante" required/>
     <input type="text" id="albumPost" placeholder="Nombre/Album" required/>
     <input type="number" id="pricePost" placeholder="Precio > 0€" required/>
     <select id="selectPost" name="opciones" required>

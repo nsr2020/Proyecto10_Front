@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly; 
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    background-color: #db9200;
+    background-image: var(--nsr-bgimage2);
+    background-color: var(--nsr-color1);
     padding: var(--nsr-padd4);
-    border-bottom: 3px double #db9200;
+    border-bottom: 3px double var(--nsr-color1);
     
     
 }
@@ -15,29 +15,29 @@
     width: 170px;
     padding: var(--nsr-padd1);
     border-radius: var(--nsr-bradiusM);
-    background-color: #F6995C;
-    font-weight: bolder;
+    background-color: var(--nsr-color14);
+    font-weight: var(--nsr-fontWeigth1);
     font-family: 'Courier New', Courier, monospace;
-    background: #092756;
+    background: var(--nsr-color15);
 background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
 background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
 background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
 background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
 background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
-color: white;
+color: var(--nsr-color13);
 }
 .sectionFiltro>select>option{
-font-weight: bolder;
+font-weight: var(--nsr-fontWeigth1);
 font-size: 12px;
 font-family: 'Courier New', Courier, monospace;
-background-color: #092756;
+background-color:var(--nsr-color15);
 
-color: rgb(238, 228, 228);
+color: var(--nsr-color16);
 }
   
 .divPrice{
    display: flex;
-   gap: 20px;
+   gap: var(--nsr-gap2);
 }
 .divPrice>input{
     background-image: linear-gradient(
@@ -46,7 +46,7 @@ color: rgb(238, 228, 228);
         #09f,
         #00DDFF
       );
-      color: whitesmoke;
+      color: var(--nsr-color17);
 }
 .divPrice>input, .divPrice>button{
     padding: var(--nsr-padd1);
@@ -55,28 +55,29 @@ color: rgb(238, 228, 228);
     background-color: var(--nsr-color3);
 }
 .divPrice>button{
-    cursor: pointer;
-    font-weight: bolder;
+    cursor: var(--nsr-pointer);
+    font-weight: var(--nsr-fontWeigth1);
     background-image: linear-gradient(
         150deg,
         #9500ff,
         #09f,
         #00DDFF
       );
-      color: black;
+      color: var(--nsr-color18);
 }
 .btnLimpiar{
     border: none;
     font-size: 25px;
-    cursor: pointer;
+    cursor: var(--nsr-pointer);
     background-color: transparent;
-    transition: all 0.5s;
-    text-shadow: 4px 1px 2px rgba(233,17,17,0.6);
+    transition: var(--nsr-transition1);
+    text-shadow: 4px 1px 2px var(--nsr-color19);
 }
 .btnLimpiar:hover{
-    transform: scale(1.1);
+    transform: scale(var(--nsr-scale1));
 }
     
+
 
 @media (max-width: 600px) {
     .sectionFiltro>select{

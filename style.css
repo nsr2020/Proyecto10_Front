@@ -19,6 +19,20 @@
   --nsr-color8: rgb(190, 151, 226);
   --nsr-color9:rgb(58, 69, 216);
     --nsr-color10:rgb(235, 101, 101);
+    --nsr-color11:blue;
+    --nsr-color12:blueviolet;
+    --nsr-color13:white;
+    --nsr-color14:#F6995C;
+    --nsr-color15:#092756;
+    --nsr-color16:rgb(238, 228, 228);
+    --nsr-color17:whitesmoke;
+    --nsr-color18:black;
+    --nsr-color19:rgba(233,17,17,0.6);
+    --nsr-color20:#d67600;
+    --nsr-color21:rgb(241, 241, 77);
+    --nsr-color22:rgb(26,12,77);
+    --nsr-color23:#fff;
+    
   /*Paddings y Margins*/
   --nsr-padd1: 10px;
   --nsr-padd2: 20px;
@@ -33,25 +47,57 @@
   --nsr-gap1: 10px;
   --nsr-gap2: 20px;
   --nsr-gap3: 25px;
-  --nsr-gap4:50px;
-  --nsr-gap5:30px;
-  --nsr-gap6:150px;
+  --nsr-gap4: 50px;
+  --nsr-gap5: 30px;
+  --nsr-gap6: 150px;
+  --nsr-gap7:60px;
 
   /*borders*/
   --nsr-border1: 5px, solid black;
   /*Border radius*/
   --nsr-bradiusS: 5px;
   --nsr-bradiusM:10px;
-  --nsr-bradiusM:20px;
+  --nsr-bradiusX:20px;
+  --nsr-bradiusXL:30px;
+  /*Background Image*/
+  --nsr-bgimage1: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    --nsr-bgimage2: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    --nsr-bgimage3: url("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709674890/Proyecto10Musica/94764ee9e351fe8e3e7598902f24e5cd_v0tvnx.jpg");
+    --nsr-bgimage4: url("https://i.pinimg.com/236x/73/60/5f/73605fab5ba3fe0ad158e7d6ed88f419.jpg");
+  /*width and height*/
+  --nsr-width2:100px;
+  --nsr-height2:100px;
+  --nsr-width1:30px;
+  --nsr-height1:30px;
+  /*top,bottom,left and right*/
+  --nsr-top1:10px;
+  --nsr-bottom1:10px;
+  --nsr-left1:10px;
+  --nsr-right1:10px;
+  /*Cursores del raton*/
+  --nsr-pointer:pointer;
+  /*scale*/
+  --nsr-scale1:1.1;
+  /*Font weight*/
+  --nsr-fontWeigth1:bolder;
+  /*Transition*/
+  --nsr-transition1:all 0.5s;
+
 }
 
 body{
   width: 100%;
   position: relative;
   background-color: var(--nsr-color1);
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  background-image: var(--nsr-bgimage2);
 } 
 
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
