@@ -5,12 +5,10 @@ import { createDeleteMusica } from "../../pages/ADMIN/delete/delete";
 import { createUpdateMusica } from "../../pages/ADMIN/update/update";
 import { addFavorito } from "../../utils/addFavorito";
 import { removeFavorito } from "../../utils/removeFavorito";
-/* import { getDeleteMusic, getDeleteMusicFav, getUpdateMusic } from "../IMAGE/image"; */
+import { createImageComponent } from "../IMAGE/image";
  import "./printMusicas.css"
 
-/*  const deleteMusicFav = getDeleteMusicFav();
-const deleteMusic = getDeleteMusic();
-const updateMusic = getUpdateMusic(); */
+
 
 export const printMusicas = (musicas, nodoPadre,estoyenFav)=> {
 
@@ -44,20 +42,12 @@ export const printMusicas = (musicas, nodoPadre,estoyenFav)=> {
         const like = document.createElement("img");
         like.classList.add("like")
 
-       const deleteMusicFav = document.createElement("img");
-        deleteMusicFav.classList.add("deleteMusicFav");
-        deleteMusicFav.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080172/Proyecto10Musica/borrar_qyeohj.png";
+        const deleteMusicFav = createImageComponent("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080172/Proyecto10Musica/borrar_qyeohj.png", "deleteMusicFav");
 
-        const deleteMusic = document.createElement("img");
-        deleteMusic.classList.add("deleteMusic");
-        deleteMusic.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080033/Proyecto10Musica/papelera-de-reciclaje_mqckz7.png";
-        deleteMusic.style.display = "none";
+        const deleteMusic = createImageComponent("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080033/Proyecto10Musica/papelera-de-reciclaje_mqckz7.png", "deleteMusic", "none");
 
-        const updateMusic = document.createElement("img");
-        updateMusic.classList.add("updateMusic");
-        updateMusic.src = "https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/actualizar_c93esh.png";
-        updateMusic.style.display = "none"; 
-  
+        const updateMusic = createImageComponent("https://res.cloudinary.com/dnju3aw4b/image/upload/v1709080032/Proyecto10Musica/actualizar_c93esh.png", "updateMusic", "none");
+        
       
         const user = JSON.parse(localStorage.getItem("user"));
         
