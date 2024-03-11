@@ -53,7 +53,7 @@
   --nsr-gap7:60px;
 
   /*borders*/
-  --nsr-border1: 5px, solid black;
+  --nsr-border1: 5px solid black;
   /*Border radius*/
   --nsr-bradiusS: 5px;
   --nsr-bradiusM:10px;
