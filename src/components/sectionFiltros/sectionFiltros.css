@@ -72,6 +72,8 @@ color: var(--nsr-color16);
     background-color: transparent;
     transition: var(--nsr-transition1);
     text-shadow: 4px 1px 2px var(--nsr-color19);
+    user-select: none;
+    pointer-events: none;
 }
 .btnLimpiar:hover{
     transform: scale(var(--nsr-scale1));

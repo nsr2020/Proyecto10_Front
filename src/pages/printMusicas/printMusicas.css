@@ -39,7 +39,7 @@ transition: var(--nsr-transition1);
     color: var(--nsr-color12);
     scale:var(--nsr-scale1);
 }
-/*Imagen de cuando se hace like y cambia de color*/
+
 .like{
     width: var(--nsr-width1);
     height:var(--nsr-height1);
@@ -48,7 +48,7 @@ transition: var(--nsr-transition1);
     right: var(--nsr-right1);
     cursor: pointer;
 }
-/*Imagenes de cuando se hace login como user y en el apartado de favoritos que quiere eliminar de la lista*/
+
 .deleteMusicFav{
     width: var(--nsr-width1);
     height: var(--nsr-height1);
@@ -58,7 +58,7 @@ transition: var(--nsr-transition1);
     cursor: var(--nsr-pointer);
     transition:var(--nsr-transition1);
 }
-/*Imagenes de cuando se hace login como admin*/
+
 .deleteMusic{
     width: var(--nsr-width1);
     height: var(--nsr-height1);

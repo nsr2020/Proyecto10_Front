@@ -1,6 +1,6 @@
 .sectionGeneral{
     width: 100%;
-    min-height: 75vh;
+    min-height: 65vh;
    flex-wrap: wrap;
     background-color:var(--nsr-color1);
     background-image: var(--nsr-bgimage2);
